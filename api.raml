@@ -54,7 +54,7 @@ resourceTypes:
   - paymentReturnedType: !include resourceTypes/paymentReturnedType.raml
 traits:
   - pageable: !include traits/pageable.raml
-securedBy: [ oauth_2_0 ]
+securedBy: [ oauth_2_0_app ]
 /payments: 
   /payment: 
     type: paymentReturnedType
