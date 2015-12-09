@@ -74,7 +74,8 @@ securedBy: [ oauth_2_0_app ]
           schema: createPaymentReq
           example: !include examples/createPaymentReq-example.json
       responses: 
-        201: 
+        201:
+          description: OK
     /{PaymentId}: 
       type: paymentReturnedType
       get: 
@@ -199,6 +200,7 @@ securedBy: [ oauth_2_0_app ]
           example: !include examples/agreementReq-example.json
       responses: 
         201: 
+          description: OK
     /{payment-token}/agreement-execute: 
       type: agreementReturnedType
       post: 
